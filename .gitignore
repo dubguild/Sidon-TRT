@@ -1,0 +1,66 @@
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python build and environment artifacts
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Local configuration and editor/OS metadata
+.env
+.env.*
+!.env.example
+configs/env.local.sh
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Generated model artifacts and job outputs
+artifacts/
+artifacts
+outputs/
+results/
+scratch/
+*.onnx
+*.plan
+*.engine
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.wav
+*.flac
+*.mp3
+*.opus
+*.ogg
+*.m4a
+*.npy
+*.npz
+strt-*
+*.o[0-9]*
+*.e[0-9]*
+*.log
+
+# Site-specific batch jobs stay local (scripts/examples has a template)
+scripts/pbs/
+
+# Local model / engine directories (scripts/workflows defaults)
+bundle/
+engines/
+engines-*/
+
+# Native build products
+*.o
+*.a
+*.so

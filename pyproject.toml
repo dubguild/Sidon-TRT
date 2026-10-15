@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sidon-trt"
+version = "0.1.0"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Rikuto Kotoge" }]
+description = "TensorRT inference for Sidon v0.1 speech restoration: TensorRT encoder + fused CUDA decoder kernels, matching the official demo output"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.8",
+    "torchaudio>=2.8",
+    "transformers==4.56.1",
+    "safetensors>=0.4",
+    "huggingface_hub>=0.24",
+    "numpy",
+    "onnx==1.22.0",
+    "tensorrt-cu12==10.16.1.11",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
