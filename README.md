@@ -244,8 +244,9 @@ v0.1 model without retraining. If you use it, please cite the Sidon paper:
 
 Sidon builds on [w2v-BERT 2.0](https://huggingface.co/facebook/w2v-bert-2.0)
 (Meta) and the [DAC](https://github.com/descriptinc/descript-audio-codec)
-decoder architecture (Descript). The fused relative-position attention
-TensorRT plugin is shared with FastDialogueSidon.
+decoder architecture (Descript).
+<!-- The fused relative-position attention
+TensorRT plugin is shared with FastDialogueSidon. -->
 
 ## License
 
